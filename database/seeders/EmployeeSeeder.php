@@ -29,8 +29,8 @@ class EmployeeSeeder extends Seeder
                 'user_id' => 4,
             ],
             [
-                'dob' => '2010-10-10',
-                'city' => 'Sleman',
+                'dob' => '2009-09-09',
+                'city' => 'Gunung Kidul',
                 'user_id' => 5,
             ],
         ];
