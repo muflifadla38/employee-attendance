@@ -29,12 +29,16 @@ Follow these steps to set up the project on your local machine:
    ```bash
    php artisan key:generate
 
-4. **Run Database Migrations & Seeders:**
+4. **Linking Storage:**
+   ```bash
+   php artisan storage:link
+
+5. **Run Database Migrations & Seeders:**
    ```bash
    php artisan migrate
    php artisan db:seed
 
-5. **Start the Development Server:**
+6. **Start the Development Server:**
    ```bash
    php artisan serve
 
