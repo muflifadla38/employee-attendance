@@ -43,6 +43,16 @@ Follow these steps to set up the project on your local machine:
    php artisan serve
 
 
+## Accounts
+### Admin
+- Email: admin@admin.com
+- Password: pass1234
+
+### Employee
+- Email: rendragituloh@gmail.com
+- Password: pass1234
+
+
 ## Usage
 This dashboard provides a foundation for employee attendance. You can extend it by adding your own components, modules, and features.
 
