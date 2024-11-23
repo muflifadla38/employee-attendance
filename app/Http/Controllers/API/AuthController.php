@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Traits\SiteTrait;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AuthController extends Controller
 {
@@ -22,7 +23,7 @@ class AuthController extends Controller
 
             $user = User::where('email', $request['email'])->first();
 
-            if ($user->status == UserStatus::INACTIVE->value) {
+            if ($user?->status == UserStatus::INACTIVE->value) {
                 return $this->sendResponse(401, 'Akun anda tidak aktif!');
             } elseif (auth()->attempt($credentials)) {
                 $data = [
